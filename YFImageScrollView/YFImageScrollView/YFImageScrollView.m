@@ -42,7 +42,7 @@
         [self addSubview:scrollView_];
         
         for(int i = 0; i <[images count]; i++) {
-            UIImage *img =[images objectAtIndex:0];
+            UIImage *img =[images objectAtIndex:i];
             UIImageView *imgView = [[UIImageView alloc ] initWithFrame:CGRectMake(frame.size.width*i, 0, frame.size.width, frame.size.height)];
             imgView.userInteractionEnabled = YES;
             imgView.image = img;
